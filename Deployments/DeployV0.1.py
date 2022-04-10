@@ -7,8 +7,8 @@ user_input = st.number_input('Day Number',
 
 @st.cache
 def load_model():
-    temp_model_file = open('TC_forecast.pkl', 'rb')
-    hum_model_file = open('HUM_forecast.pkl', 'rb')
+    temp_model_file = open('Models/TC_forecast.pkl', 'rb')
+    hum_model_file = open('Models/HUM_forecast.pkl', 'rb')
 
     temp_model = pickle.load(temp_model_file)
     hum_model = pickle.load(hum_model_file)
